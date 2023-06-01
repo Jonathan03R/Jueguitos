@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Jonthan || Rq</title>
+    <style>
+        *{
+            font-family: 'Secular One', sans-serif;
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            background-color: #997474;
+        }
+
+        .osito{
+            display: flex;
+            height: 815px;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+
+        }
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            translate: 0% 78%;
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+        }
+
+        .boton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 40px;
+            background-color: #ebacac;
+            border: 1px solid #000;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            box-shadow: -1px 5px 20px 8px rgb(240 199 199);
+            background-color: #e28383;
+        }
+
+        #boton1 {
+            top: 50%;
+            left: 35%;
+        }   
+
+        #boton2 {
+            top: 50%;
+            left: 65%;
+        }
+
+        .mensaje {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -53%);
+        }
+        .cocoroxd {
+            height: 987px;
+            z-index: -1;
+            position: absolute;
+            translate: -37% -45%;
+        }
+
+        .mensaje h2 {
+            font-size: x-large;
+            font-weight: bold;
+            color: white;
+            translate: -8% 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <h1>Solo quiero preguntarte</h1>
+        <p>¿Quieres salir conmigo?</p>
+    </div>
+    <div id="boton1" class="boton">Sí</div>
+    <div id="boton2" class="boton">No</div>
+    <div class="osito">
+        <img class="img" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50bf41ad-ce1b-454d-94b2-9900978dc4bc/d8dkalk-534ba1aa-6591-4632-9a74-8dc85997f394.png/v1/fill/w_600,h_429/rilakkuma_png_by_sauki_princess_d8dkalk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDI5IiwicGF0aCI6IlwvZlwvNTBiZjQxYWQtY2UxYi00NTRkLTk0YjItOTkwMDk3OGRjNGJjXC9kOGRrYWxrLTUzNGJhMWFhLTY1OTEtNDYzMi05YTc0LThkYzg1OTk3ZjM5NC5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.A_S3rHL1FQSom3HjKH7wfRhQdLAPyejmdslKKFxe9Q0" alt="">
+    
+    </div>
+    <div class="mensaje" id="mensaje">
+        <img class="cocoroxd" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png" alt="">
+        <h2>Sabia que diria que si :3 </h2>
+    </div>
+    <script>
+        var boton1 = document.getElementById('boton1');
+        var mensajeDiv = document.getElementById('mensaje');
+
+        boton1.addEventListener('click', function() {
+            mensajeDiv.style.display = 'block';
+        });
+
+        var boton2 = document.getElementById('boton2');
+
+        boton2.addEventListener('mouseenter', function() {
+            boton2.style.top = Math.random() * 80 + '%';
+            boton2.style.left = Math.random() * 80 + '%';
+        });
+    </script>
+</body>
+</html>
